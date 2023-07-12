@@ -10,11 +10,6 @@ fn otan() {
 
     let otan_input = otan_input.trim().to_uppercase();
 
-    if otan_input.chars().any(|c| c.is_ascii_digit()) {
-        println!("\nVeuillez ne pas mettre de nombres.");
-        return;
-    }
-
     let mut translation = String::with_capacity(otan_input.len() * 6); // Pré-allouer suffisamment de capacité
 
     for c in otan_input.chars() {
