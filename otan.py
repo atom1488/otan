@@ -9,7 +9,7 @@ def Otan():
         if(any(chr.isdigit() for chr in otanInput)):
             return print('\nVeuillez ne pas mettre de nombres.')
         translate = list(map(array.get, otanInput))
-        print("\n" + " ".join(map(array.get, otanInput)) + "\n")
+        print("\n" + " ".join(translate) + "\n")
     except Exception as err:
         print(f"[ERREUR]: {err}")
 Otan()
